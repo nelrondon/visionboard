@@ -18,6 +18,7 @@ export const BoardProvider = ({ children }) => {
   const [dailyHabits, setDailyHabits] = useState(() => {
     const dailyHabits = JSON.parse(localStorage.getItem("dailyHabits"));
     const today = getDay();
+    if (!dailyHabits) return [];
     if (dailyHabits.date !== today) {
       return dailyHabits.habits.map((habit) => ({
         ...habit,
