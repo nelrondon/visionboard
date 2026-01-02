@@ -6,6 +6,7 @@ import QuarterSelector from "./components/QuarterSelector";
 import ProgressBar from "./components/ProgressBar";
 import HabitList from "./components/HabitList";
 import { Modal } from "./components/Modal";
+import { Footer } from "./components/Footer.jsx";
 
 function App() {
   const {
@@ -53,6 +54,7 @@ function App() {
           />
         </main>
       </main>
+      <Footer />
       <Modal />
     </>
   );

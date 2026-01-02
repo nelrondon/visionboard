@@ -1,0 +1,13 @@
+.footer-app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2em;
+  color: inherit;
+
+  a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
